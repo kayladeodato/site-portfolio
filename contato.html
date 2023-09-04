@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <div id="menu">
             <a class="menu-title" href="index.html">
@@ -23,12 +24,10 @@
             </nav>
         </div>
     </header>
+    <!-- Fim Header -->
 
     <section id ="contact">
-        <div class="contact-title">
-            <h1>Meus contatos</h1>
-        </div>
-
+        <!-- Formulário para contato -->
         <main>
 			<form>
 				<label for="nomesobrenome">Nome e sobrenome</label>
@@ -41,26 +40,37 @@
 				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
 				<label for="mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+				<textarea cols="70" rows="8" id="mensagem" class="input-padrao" required></textarea>
 
-				<input type="submit" value="Enviar formulário" class="enviar">
+				<input type="submit" value="Enviar formulário" id="enviar">
+
+                <script src="main.js"></script>
 			</form>
         </main>
         
+        <!-- Ícones com acesso a minhas redes sociais -->
         <div class="links">
             <h3>Minhas redes</h3>
-            <a href="https://github.com/kayladeodato" target="_blank">
-              <img src="img/github.png" alt="icon-github">
-            </a>
-            <a href="https://www.linkedin.com/in/kayla-deodato/" target="_blank">
-              <img src="img/linkedin.png" alt="icon-linkedin">
-            </a>
-          </div>
+            <div class="medias">
+                <a href="https://github.com/kayladeodato" target="_blank">
+                    <img src="img/github.png" alt="icon-github">
+                </a>
+                <a href="https://www.linkedin.com/in/kayla-deodato/" target="_blank">
+                    <img src="img/linkedin.png" alt="icon-linkedin">
+                </a>
+                  <a href="mailto:kayladeodato@gmail.com" target="_blank">
+                    <img src="img/email.png" alt="icon-email">
+                </a>
+            </div>
+        </div>  
         
     </section>
 
-     <footer>
-        <p class="copyright"> Kayla Deodato &copy; 2023</p>
+    <!-- Footer -->
+    <footer>
+        <p class="copyright" id="ano-atual"></p>
+        <script src="main.js"></script>
     </footer>
+    
 </body>
 </html>
